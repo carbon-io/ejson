@@ -14,8 +14,26 @@ var tests = [
 
   { 
     value: 0,
+    schema: null,
+    result: 0
+  },
+
+  { 
+    value: 0,
     schema: { type: 'string' }, // We do not currently coerce into strings from other types but we could
     result: 0
+  },
+
+  { 
+    value: "hello",
+    schema: { type: 'string' }, 
+    result: "hello"
+  },
+
+  { 
+    value: '"hello"',
+    schema: { type: 'string' }, 
+    result: '"hello"'
   },
 
   { 
