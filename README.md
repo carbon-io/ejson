@@ -1,0 +1,2 @@
+# ejson
+EJSON utility library
