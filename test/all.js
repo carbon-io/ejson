@@ -1,0 +1,1 @@
+require('./coerce-tests.js')
