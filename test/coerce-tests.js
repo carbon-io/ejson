@@ -83,7 +83,7 @@ var tests = [
         type: 'object',
         properties: {
           a: { type: 'boolean' },
-          b: { type: 'number' },
+          b: { type: 'integer' },
         }
       }
     },
