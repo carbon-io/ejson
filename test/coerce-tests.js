@@ -55,15 +55,15 @@ var tests = [
   },
 
   { 
-    value: { a: "true", b: "2" },
-    schema: { 
-      type: 'object',
-      properties: {
-        a: { type: 'boolean' },
-        b: { type: 'number' },
-      }
-    },
-    result: { a: true, b: 2 },
+    value: "576ef07f65cb0809ef59e0b7",
+    schema: { type: "ObjectId" },
+    result: new EJSON.ObjectId("576ef07f65cb0809ef59e0b7"),
+  },
+
+  { 
+    value: "Sat Jun 25 2016 15:18:15 GMT-0700 (PDT)",
+    schema: { type: "Date" },
+    result: new Date("Sat Jun 25 2016 15:18:15 GMT-0700 (PDT)")
   },
 
   { 
