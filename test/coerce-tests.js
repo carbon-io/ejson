@@ -104,6 +104,27 @@ var tests = [
     result: { a: [true, false] }
   },
 
+  { 
+    value: { 
+      x: new EJSON.ObjectId("576ef07f65cb0809ef59e0b7"),
+      y: new Date("Sat Jun 25 2016 15:18:15 GMT-0700 (PDT)"),
+      z: [ 9, true ]      
+    },
+    schema: { 
+      type: 'object',
+      properties: {
+        x: { type: 'ObjectId' },
+        y: { type: 'Date' },
+        z: { type: 'array' },
+      }
+    },
+    result: { 
+      x: new EJSON.ObjectId("576ef07f65cb0809ef59e0b7"),
+      y: new Date("Sat Jun 25 2016 15:18:15 GMT-0700 (PDT)"),
+      z: [ 9, true ]      
+    }
+  },
+
 ]
 
 _.forEach(tests, function(test) {
