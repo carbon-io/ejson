@@ -89,6 +89,21 @@ var tests = [
     },
     result: [{ a: true, b: 2 }],
   },
+
+  { 
+    value: { a: ["true", "false"] },
+    schema: { 
+      type: 'object',
+      properties: {
+        a: { 
+          type: 'array',
+          items: { type: 'boolean' }
+        }
+      }
+    },
+    result: { a: [true, false] }
+  },
+
 ]
 
 _.forEach(tests, function(test) {
