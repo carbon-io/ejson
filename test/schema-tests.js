@@ -32,21 +32,31 @@ var expandedSchema = {
       required: ['$oid'],
       properties: {
         '$oid' : { type: 'string' }
-      }
+      },
+      additionalProperties: false
     },
     c: { 
       type: 'object',
       required: ['$date'],
       properties: {
         '$date' : { type: 'string' }
-      }
+      },
+      additionalProperties: false
     },
     d: { 
       type: 'object',
       required: ['$timestamp'],
       properties: {
-        '$timestamp' : { type: 'string' }
-      }
+        '$timestamp' : { 
+          type: 'object',
+          properties: {
+            t: { type: 'number' },
+            i: { type: 'number' }
+          },
+          additionalProperties: false
+        }
+      },
+      additionalProperties: false
     },
     e: { 
       type: 'object',
@@ -54,35 +64,40 @@ var expandedSchema = {
       properties: {
         '$regex' : { type: 'string' },
         '$options': { type: 'string' }
-      }
+      },
+      additionalProperties: false
     },
     f: { 
       type: 'object',
       required: ['$undefined'],
       properties: {
         '$undefined': { type: 'boolean' }
-      }
+      },
+      additionalProperties: false
     },
     g: { 
       type: 'object',
       required: ['$minKey'],
       properties: {
         '$minKey': { type: 'number', minimum: 1, maximum: 1 }
-      }
+      },
+      additionalProperties: false
     },
     h: { 
       type: 'object',
       required: ['$maxKey'],
       properties: {
         '$maxKey': { type: 'number', minimum: 1, maximum: 1 }
-      }
+      },
+      additionalProperties: false
     },
     i: { 
       type: 'object',
       required: ['$numberLong'],
       properties: {
         '$numberLong': { type: 'string' }
-      }
+      },
+      additionalProperties: false
     },
     j: { 
       type: 'object',
@@ -90,7 +105,8 @@ var expandedSchema = {
       properties: {
         '$ref': { type: 'string' },
         '$id': {} 
-      }
+      },
+      additionalProperties: false
     },
     k: { 
       type: 'Array', 
@@ -99,7 +115,8 @@ var expandedSchema = {
         required: ['$date'],
         properties: {
           '$date' : { type: 'string' }
-        }
+        },
+        additionalProperties: false
       },
     }
   }
