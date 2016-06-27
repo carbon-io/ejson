@@ -18,7 +18,7 @@ var schema = {
     g: { type: 'MinKey' },
     h: { type: 'MaxKey' },
     i: { type: 'NumberLong' },
-    j: { type: 'Ref' },
+    j: { type: 'DBRef' },
     k: { type: 'Array', items: { type: 'Date' }}
   }
 }
