@@ -17,7 +17,7 @@ var schema = {
     f: { type: 'Undefined' },
     g: { type: 'MinKey' },
     h: { type: 'MaxKey' },
-    i: { type: 'NumberLong' },
+    i: { type: 'Long' },
     j: { type: 'DBRef' },
     k: { type: 'Array', items: { type: 'Date' }}
   }
