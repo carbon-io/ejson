@@ -57,7 +57,7 @@ var tests = [
   { 
     value: "576ef07f65cb0809ef59e0b7",
     schema: { type: "ObjectId" },
-    result: new EJSON.ObjectId("576ef07f65cb0809ef59e0b7"),
+    result: new EJSON.types.ObjectId("576ef07f65cb0809ef59e0b7"),
   },
 
   { 
@@ -106,7 +106,7 @@ var tests = [
 
   { 
     value: { 
-      x: new EJSON.ObjectId("576ef07f65cb0809ef59e0b7"),
+      x: new EJSON.types.ObjectId("576ef07f65cb0809ef59e0b7"),
       y: new Date("Sat Jun 25 2016 15:18:15 GMT-0700 (PDT)"),
       z: [ 9, true ]      
     },
@@ -119,7 +119,7 @@ var tests = [
       }
     },
     result: { 
-      x: new EJSON.ObjectId("576ef07f65cb0809ef59e0b7"),
+      x: new EJSON.types.ObjectId("576ef07f65cb0809ef59e0b7"),
       y: new Date("Sat Jun 25 2016 15:18:15 GMT-0700 (PDT)"),
       z: [ 9, true ]      
     }
