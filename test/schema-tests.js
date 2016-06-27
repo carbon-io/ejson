@@ -123,7 +123,7 @@ var expandedSchema = {
 }
 
 //console.log(schema)
-//console.log(jsonSchemaValidator.expandEjsonSchema(schema))
+//console.log(jsonSchemaValidator.toJSONSchema(schema))
 //console.log(expandedSchema)
 
-assert.deepEqual(EJSON.expandEJSONSchema(schema), expandedSchema)
+assert.deepEqual(EJSON.toJSONSchema(schema), expandedSchema)
