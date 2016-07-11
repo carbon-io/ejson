@@ -16,7 +16,7 @@
   "dependencies": {
     "lodash" : "4.5.x",
     "z-schema": "3.17.0",
-    "mongodb-extended-json": "1.6.3",
+    "mongodb-extended-json": "git+ssh://git@github.com:carbon-io/extended-json.git",
     "leafnode": "git+ssh://git@github.com:objectlabs/leafnode.git#v3.2.0"
   },
   "preferGlobal": false
