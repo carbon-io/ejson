@@ -1,6 +1,6 @@
 {
   "name": "ejson",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "EJSON utility library",
   "contributors": [
     "Will Shulman <will@objectlabs.com>"
