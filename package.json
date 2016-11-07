@@ -1,6 +1,6 @@
 {
   "name": "@carbon-io/ejson",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "EJSON utility library",
   "contributors": [
     "Will Shulman <will@objectlabs.com>"
@@ -16,7 +16,7 @@
   "dependencies": {
     "lodash" : "4.5.x",
     "z-schema": "3.17.0",
-    "@carbon-io/mongodb-extended-json": "~1.6.3-ml",
+    "@carbon-io/mongodb-extended-json": "1.6.5-ml",
     "leafnode": "objectlabs/leafnode.git#v3.2.1"
   },
   "preferGlobal": false
