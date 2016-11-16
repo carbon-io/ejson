@@ -40,4 +40,5 @@ jspm_packages
 .python-version
 
 # docs
-docs/_build/*
+docs/*
+
