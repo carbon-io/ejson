@@ -17,7 +17,7 @@
     "lodash" : "4.5.x",
     "z-schema": "3.17.0",
     "@carbon-io/mongodb-extended-json": "1.6.5-ml",
-    "leafnode": "objectlabs/leafnode.git#v3.2.1"
+    "@carbon-io/leafnode": "0.1.x"
   },
   "preferGlobal": false
 }
