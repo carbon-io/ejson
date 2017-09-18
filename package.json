@@ -1,6 +1,6 @@
 {
   "name": "@carbon-io/ejson",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "EJSON utility library",
   "contributors": [
     "Will Shulman <will@objectlabs.com>"
