@@ -5,18 +5,18 @@
   "contributors": [
     "Will Shulman <will@objectlabs.com>"
   ],
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/carbon-io/ejson"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carbon-io/ejson"
   },
   "main": "./lib/EJSON.js",
-  "directories" : {
-    "lib" : "./lib"
+  "directories": {
+    "lib": "./lib"
   },
   "dependencies": {
-    "lodash" : "4.5.x",
+    "lodash": "4.5.x",
     "z-schema": "3.17.0",
-    "@carbon-io/mongodb-extended-json": "1.6.5-ml",
+    "mongodb-extended-json": "1.10.x",
     "@carbon-io/leafnode": "0.4.x"
   },
   "preferGlobal": false
